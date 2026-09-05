@@ -6,7 +6,7 @@ Why? It reveals how different skills impact salary levels for Data Analysts andh
 */
 SELECT 
     skills AS skill_name,
-    ROUND(AVG(job_postings_fact.salary_year_avg), 0) AS avg_salary
+    ROUND(AVG(salary_year_avg), 0) AS avg_salary
 FROM 
     job_postings_fact
 INNER JOIN 
