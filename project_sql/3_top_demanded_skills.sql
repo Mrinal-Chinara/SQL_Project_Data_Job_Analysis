@@ -15,7 +15,8 @@ INNER JOIN
 INNER JOIN 
     skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 WHERE 
-    job_title_short = 'Data Analyst'
+    job_title_short = 'Data Analyst' AND
+    job_location = 'Anywhere'
 GROUP BY 
    skills
 ORDER BY 
@@ -27,23 +28,23 @@ RESULT->
 [
   {
     "skill_name": "sql",
-    "demand_count": "92628"
+    "demand_count": "7291"
   },
   {
     "skill_name": "excel",
-    "demand_count": "67031"
+    "demand_count": "4611"
   },
   {
     "skill_name": "python",
-    "demand_count": "57326"
+    "demand_count": "4330"
   },
   {
     "skill_name": "tableau",
-    "demand_count": "46554"
+    "demand_count": "3745"
   },
   {
     "skill_name": "power bi",
-    "demand_count": "39468"
+    "demand_count": "2609"
   }
 ]
 */
